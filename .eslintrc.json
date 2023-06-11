@@ -29,6 +29,7 @@
     "jsx-a11y/label-has-associated-control": "off",
     "import/no-extraneous-dependencies": "off",
     "global-require": "off",
-    "jsx-a11y/no-noninteractive-tabindex": "off"
+    "jsx-a11y/no-noninteractive-tabindex": "off",
+    "no-nested-ternary": "off"
   }
 }
