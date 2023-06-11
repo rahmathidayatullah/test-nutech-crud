@@ -13,8 +13,8 @@ export default function ItemProduct(props) {
     <li key={id} className="relative col-span-1">
       {/* hover */}
       <div className="opacity-0 absolute z-10 inset-0 hover:bg-gray-600 hover:bg-opacity-50 hover:opacity-100 transition-all rounded-xl">
-        <div className="flex flex-col items-center justify-center h-full">
-          <div className="flex items-center gap-5">
+        <div className="flex flex-col items-end justify-end h-full">
+          <div className="flex items-center gap-5 mb-2 mr-2">
             <Link
               className="btn btn-sm btn-accent text-white"
               to={`/product/${id}`}
