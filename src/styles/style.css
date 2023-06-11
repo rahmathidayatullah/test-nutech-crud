@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.wrapper-paginate {
+  display: inline-flex;
+  align-items: stretch;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.wrapper-paginate li {
+  position: relative;
+  display: inline-flex;
+  flex-shrink: 0;
+  cursor: pointer;
+  -webkit-user-select: none;
+  user-select: none;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  border-color: transparent;
+  text-align: center;
+  transition-duration: .2s;
+  transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+  height: 3rem;
+  width: 3rem;
+  font-size: .875rem;
+  line-height: 1.25rem;
+  line-height: 1em;
+  min-height: 3rem;
+  gap: 0.5rem;
+  font-weight: 600;
+  text-decoration-line: none;
+  background-color: #F2F2F2;
+}
+
+.wrapper-paginate li.previous {
+  width: 6rem;
+}
+
+.wrapper-paginate li.next {
+  width: 4rem;
+}
+
+.wrapper-paginate li:hover {
+  transition-duration: .2s;
+  transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+  background-color: #e5e6e6;
+}
+
+.wrapper-paginate li.next a,
+.wrapper-paginate li.previous a,
+.wrapper-paginate li a {
+  position: absolute;
+  inset: 0;
+  top: 34%;
+}
+
+.wrapper-paginate li.paginationActive {
+  background-color: #e5e6e6;
+}
